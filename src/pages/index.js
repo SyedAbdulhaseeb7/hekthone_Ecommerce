@@ -8,7 +8,8 @@ export default function Home() {
   return (
     <>
     <Navbar/>
-    <Hero/>
+    <div className="bg-black">  <Hero/></div>
+  
     
     </>
     

@@ -43,14 +43,14 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-        
-        <button className="relative text-gray-100 hover:text-yellow-700 text-lg">
+        <Link href="/cart">     <button className="relative text-gray-100 hover:text-yellow-700 text-lg">
           <FiShoppingCart />
           {/* Cart Badge */}
           <span className="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center">
             3
           </span>
-        </button>
+        </button></Link>
+   
         
 
         {/* Center: Logo */}

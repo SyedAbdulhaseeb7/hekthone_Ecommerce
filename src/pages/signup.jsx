@@ -4,9 +4,12 @@ import { AiOutlineUser } from "react-icons/ai";
 import { SlEnvolope } from "react-icons/sl";
 import { IoIosCheckbox } from "react-icons/io";
 import { MdLockOutline } from "react-icons/md";
+import Navbar from "@/components/Navbar";
 
 export default function SignUpPage() {
   return (
+    <>
+     <Navbar/>
     <div className="min-h-screen bg-white">
       <section
         className="bg-cover bg-center h-64 flex items-center justify-center"
@@ -115,5 +118,6 @@ export default function SignUpPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

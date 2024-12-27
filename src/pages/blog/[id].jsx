@@ -17,6 +17,7 @@ import { BsCalendarMonth } from "react-icons/bs";
 import Link from 'next/link';
 import Comment from '../../components/LayoutComments';
 import { useRouter } from 'next/router';
+import Navbar from '@/components/Navbar.jsx';
 
 const page = () => {
 
@@ -25,6 +26,8 @@ const page = () => {
     console.log(id)
     const filterd = databloglistindivi.find((item) => item.id === Number(id))
   return (
+    <>
+    <Navbar/>
     <div className=''>
       
       <section
@@ -89,7 +92,7 @@ const page = () => {
           
         </div>
         <div className="flex-grow items-center ">
-            <img src={"https://cdn.smartkarrot.com/wp-content/uploads/2020/11/Client-Services-Manager-1000x667.png"} alt='client' className='ml-[50px] object-cover'/>
+            <img src={"https://cdn.smartkarrot.com/wp-content/uploads/2020/11/Client-Services-Manager-1000x667.png"} alt='client' className=' object-cover'/>
           <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
             Prince Miyako
           </h2>
@@ -320,6 +323,7 @@ const page = () => {
      </div>
       </div>
     </div>
+    </>
   )
 }
 export default page

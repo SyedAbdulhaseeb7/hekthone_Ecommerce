@@ -20,10 +20,12 @@ import Footer from '@/components/Footer';
 const blog = () => {
   return (
 <>
-
+<Navbar/>
       <section
         className="bg-cover bg-center h-64 flex items-center justify-center"
-        style={{ backgroundImage: "url('/allnav.png')" }}
+        style={{ backgroundImage: "url('https://t4.ftcdn.net/jpg/04/76/57/27/360_F_476572792_zMwqHpmGal1fzh0tDJ3onkLo88IjgNbL.jpg')" ,
+        backgroundSize:"cover"
+      }}
       >
         <div className="text-center text-white">
           <h2 className="text-4xl font-bold">Blog List</h2>
@@ -40,9 +42,9 @@ const blog = () => {
                 <div key={blog.id} className='flex flex-col gap-4 justify-center mb-[50px]'>
                    <img src={blog.image} alt='blogs' width={400} height={400} className='lg:w-[600px] lg:h-[450px] w-[300px] h-[250px] object-cover'/>
                     <h1 className='flex gap-3 text-gray-600 '><BsCalendarMonth className='text-white text-2xl'/> Feb 14, 2022 /<GoCommentDiscussion className='text-bordercoloryello text-2xl'/>  3 / <PiUserCircleGear className='text-bordercoloryello text-2xl'/>Admin</h1>
-                    <h1 className='lg:text-[24px] text-[20px] font-bold font-helvetica text-white'>{blog.title}</h1>
+                    <h1 className='lg:text-[24px] text-[20px] font-bold font-helvetica text-black'>{blog.title}</h1>
                     <p className='lg:w-[550px] h-[170px] w-[300px] pt-[30px] font-medium text-[15px] text-white]'>{blog.para}</p>
-                    <Link href={`/blog/${blog.id}`}><button className='border text-white lg:mt-0 mt-[30px] border-bordercoloryello w-[150px] h-[52px] p-3 rounded-[6px] flex gap-2 '><LuArrowUpFromLine className='text-xl text-bordercoloryello'/> Read more </button></Link>
+                    <Link href={`/blog/${blog.id}`}><button className='border text-black lg:mt-0 mt-[30px] border-bordercoloryello w-[150px] h-[52px] p-3 rounded-[6px] flex gap-2 '><LuArrowUpFromLine className='text-xl text-black'/> Read more </button></Link>
                 </div>
             )
         })}
@@ -66,13 +68,13 @@ const blog = () => {
           
         </div>
         <div className="flex-grow items-center ">
-            <img src={"https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"} alt='client' className='ml-[50px]'/>
+            <img src={"https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"} alt='client' className=''/>
           <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-            Prince Miyako
+            Hamza
           </h2>
-          <h1 className='text-gray-100 text-lg title-font font-medium mb-3'>Blogger/Photographer</h1>
+          <h1 className='text-gray-900 text-lg title-font font-medium mb-3'>Blogger/Photographer</h1>
           <h1 className='flex gap-1 justify-center'><IoIosStar className='text-white'/><IoIosStar className='text-white'/><IoIosStar className='text-white'/><IoIosStar className='text-white'/><IoIosStar className='text-white'/> (1 Review)</h1>
-          <p className="leading-relaxed text-base text-white">
+          <p className="leading-relaxed text-base text-black">
             Blue bottle crucifix vinyl post-ironic four dollar toast vegan
             taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
             pug VHS try-hard.

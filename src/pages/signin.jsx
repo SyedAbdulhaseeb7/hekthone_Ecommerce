@@ -7,9 +7,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoSearch } from "react-icons/io5";
 import { PiUserBold } from "react-icons/pi";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
+import Navbar from "@/components/Navbar";
 
 export default function SignInPage() {
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-white">
    
 
@@ -63,5 +66,6 @@ export default function SignInPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

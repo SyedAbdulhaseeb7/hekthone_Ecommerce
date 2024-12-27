@@ -38,7 +38,7 @@ const menu = () => {
 
   return (
     <>
-  
+  <Navbar/>
       <section
         className="bg-cover bg-center h-64 flex items-center justify-center"
         style={{

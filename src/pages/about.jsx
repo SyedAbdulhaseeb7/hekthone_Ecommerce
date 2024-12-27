@@ -11,6 +11,7 @@ import Link from "next/link";
 import { PiQuotesLight } from "react-icons/pi";
 import { GoDotFill } from "react-icons/go";
 import { MdStar } from "react-icons/md";
+import Navbar from "@/components/Navbar";
 
 
 const ourdata = [
@@ -19,62 +20,65 @@ const ourdata = [
     title: "Lettuce Leaf",
     para: "Lacus nisi, et ac dapibus velit in consequat.",
     price: 12.5,
-    img: ""
+    img: "https://media-cdn.tripadvisor.com/media/photo-s/0f/c7/48/de/foood.jpg"
   },
   {
     id:1,
     title: "Fresh Breakfast",
     para: "Lacus nisi, et ac dapibus velit in consequat.",
     price: 14.5,
-    img: ""
+    img: "https://imgcdn.stablediffusionweb.com/2024/3/19/63e99584-54af-47ca-9d17-9ec86e37c83d.jpg"
   },
   {
     id:2,
     title: "Mild Butter",
     para: "Lacus nisi, et ac dapibus velit in consequat.",
     price: 12.5,
-    img: ""
+    img: "https://live.staticflickr.com/2044/2095993644_86dd6551aa_b.jpg"
   },
   {
     id:3,
     title: "Fresh bread",
     para: "Lacus nisi, et ac dapibus velit in consequat.",
     price: 12.5,
-    img: ""
+    img: "https://content.jdmagicbox.com/v2/comp/chennai/p2/044pxx44.xx44.171205140323.h2p2/catalogue/nila-fast-foood-madhavaram-chennai-fast-food-sb1bz-250.jpg"
   },
   {
     id:4,
     title: "Glow Cheese",
     para: "Lacus nisi, et ac dapibus velit in consequat.",
     price: 12.5,
-    img: ""
+    img: "https://i.quotev.com/lpqw6m4jaaaa.jpg"
   },
   {
     id:5,
     title: "Italian pizza",
     para: "Lacus nisi, et ac dapibus velit in consequat.",
     price: 12.5,
-    img: ""
+    img: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/foood-template-design-4c4e64cea781f81cda294c2287898074_screen.jpg?ts=1721716220"
   },
   {
     id:6,
     title: "Sllixe Beef",
     para: "Lacus nisi, et ac dapibus velit in consequat.",
     price: 12.5,
-    img: ""
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSahc2_-pjgyX62fLkTgEwmHz3ub17w_uejWA&s"
   },
   {
     id:7,
     title: "Mushaom Pizza",
     para: "Lacus nisi, et ac dapibus velit in consequat.",
     price: 12.5,
-    img: ""
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKX9PF_mwHCVIcnmUFe_GHWRV_maowPl8OYA&s"
   },
  ]
 
 export default function About() {
   return (
+<>
+    <Navbar/>
    <div>
+    
   
 
 <section
@@ -94,11 +98,11 @@ export default function About() {
      <div className="lg:block hidden">
      <div className="grid grid-cols-1 lg:grid-cols-2 lg:w-[660px] lg:h-[734px]">
         <div>
-          <img src={""} alt="Food 1" className=" w-[300px] h-[400px] "/>
+          <img src={"https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg"} alt="Food 1" className=" w-[300px] h-[400px] object-cover "/>
         </div>
         <div className="grid grid-rows-2 h-[484px] pt-[50px]">
-          <img src={""} alt="Food 2" className=" w-[200px] h-[200px] " />
-          <img src={""} alt="Food 3" className=" w-[200px] h-[250px] " />
+          <img src={"https://www.brit.co/media-library/3-ingredient-dessert-recipes.jpg?id=23305200&width=300"} alt="Food 2" className=" w-[200px] h-[200px] " />
+          <img src={"https://images.jdmagicbox.com/v2/comp/mumbai/y3/022pxx22.xx22.230105170018.a1y3/catalogue/amar-fast-food-and-restaurant-thane-west-thane-restaurants-3gmw3bd1ec.jpg"} alt="Food 3" className=" w-[200px] h-[250px] " />
         </div>
       </div>
      </div>
@@ -107,7 +111,7 @@ export default function About() {
           About us ______
         </h1>
         <h2 className="text-black font-bold text-3xl md:text-4xl lg:text-5xl leading-tight mt-4">
-          Food is an important part Of a balanced Diet
+         <span className="text-yellow-700">Food </span> is an important part Of a balanced Diet
         </h2>
         <p className="text-gray-600 lg:w-[400px] text-lg mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam
@@ -140,11 +144,11 @@ export default function About() {
       </p>
     </div>
     <img
-      src={""}
+      src={"https://www.rontar.com/blog/wp-content/uploads/2024/10/african-restaurant-name-ideas-768x526.jpg"}
       alt="image"
       width={500}
       height={500}
-      className="lg:h-[265px] lg:w-[900px]"
+      className="lg:h-[365px] lg:w-[900px] object-cover"
     />
   </div>
 </div>
@@ -155,19 +159,19 @@ export default function About() {
           <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16">
             {/* Professional Chefs */}
             <div className="p-4 text-center">
-              <img src={""} alt="Professional Chef" className="w-20 h-20 mx-auto md:w-24 md:h-24 lg:w-32 lg:h-32" />
+              <img src={"https://offloadmedia.feverup.com/secretdc.com/wp-content/uploads/2024/06/11104024/Best-Chef-In-America.jpg"} alt="Professional Chef" className="w-20 h-20 object-cover mx-auto md:w-24 md:h-24 lg:w-32 lg:h-32" />
               <p className="leading-relaxed text-blackkk font-bold text-sm md:text-lg lg:text-xl mt-4">Best Chefs</p>
               <h1 className="text-blackkk text-xl md:text-2xl lg:text-xs w-[200px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. animi! Eum explicabo aliquam neque</h1>
             </div>
             {/* Items of Food */}
             <div className="p-4 text-center">
-              <img src={""} alt="Items of Food" className="w-20 h-20 mx-auto md:w-24 md:h-24 lg:w-32 lg:h-32" />
+              <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1W1PUxYNGG45RD_rj1jHnaBAJirJzlGEW6g&s"} alt="Items of Food" className="w-20 h-20 object-cover mx-auto md:w-24 md:h-24 lg:w-32 lg:h-32" />
               <p className="leading-relaxed text-blackkk font-bold text-sm md:text-lg lg:text-xl mt-4">120 Items of Food</p>
               <h1 className="text-blackkk text-xl md:text-2xl lg:text-xs w-[200px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. animi! Eum explicabo aliquam neque</h1>
             </div>
             {/* Years of Experience */}
             <div className="p-4 text-center">
-              <img src={""} alt="Years of Experience" className="w-20 h-20 mx-auto md:w-24 md:h-24 lg:w-32 lg:h-32" />
+              <img src={"https://img.freepik.com/free-vector/gradient-30th-anniversary-birthday-design_23-2149271756.jpg"} alt="Years of Experience" className="w-20 h-20 mx-auto md:w-24 md:h-24 lg:w-32 lg:h-32" />
               <p className="leading-relaxed text-blackkk font-bold text-sm md:text-lg lg:text-xl mt-4">Years of Experience</p>
               <h1 className="text-blackkk text-xl md:text-2xl lg:text-xs w-[200px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. animi! Eum explicabo aliquam neque</h1>
             </div>
@@ -179,7 +183,7 @@ export default function About() {
       <div className="px-[10px] md:px-[50px] lg:px-[100px] flex flex-col items-center">
         <div className="mt-10 bg-white rounded-lg shadow-lg p-6 md:p-8 flex flex-col items-center w-full max-w-[600px] md:max-w-[700px] lg:max-w-[868px]">
           <div className="w-[80px] md:w-[100px] lg:w-[120px] h-[80px] md:h-[100px] lg:h-[120px] rounded-full overflow-hidden">
-            <img src={""} alt="client pic" className="object-cover" />
+            <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIIzAzRsgTqNne0VJD3DVhQfnGM_9om_jxgg&s"} alt="client pic" className="object-cover" />
           </div>
           <div className="mt-6">
             <PiQuotesLight className="text-bordercoloryello text-[36px] md:text-[42px] lg:text-[48px]" />
@@ -195,7 +199,7 @@ export default function About() {
             <MdStar className="text-bordercoloryello" />
             <MdStar className="text-bordercoloryello" />
             <MdStar className="text-bordercoloryello" />
-            <MdStar className="text-gray-400" />
+            <MdStar className="text-yellow-400" />
           </div>
           <h2 className="mt-6 text-[18px] md:text-[20px] lg:text-[24px] font-bold text-gray-800">
             Alamin Hasan
@@ -249,5 +253,6 @@ export default function About() {
       </div>
     </div>
    </div>
+   </>
   );
 }

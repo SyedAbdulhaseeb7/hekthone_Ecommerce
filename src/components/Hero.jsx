@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <>
     <section
-      className="relative w-full lg:h-screen top-16 bg-cover bg-center"
+      className=" bg-black relative w-full lg:h-screen top-16 bg-cover bg-center"
  
     >
       <div className="w-full lg:hidden flex justify-center">
@@ -334,7 +334,7 @@ food item
               <div className="h-full border-2 border-gray-200 border-opacity-60 overflow-hidden">
                 <img
                   src="https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza.jpg"
-                  className="lg:h-48 md:h-36 object-cover "
+                  className="lg:h-52 md:h-36 object-cover "
                   alt="blog"
                 />
                 <div className="p-4 md:p-6">
